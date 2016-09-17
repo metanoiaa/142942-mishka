@@ -10,26 +10,22 @@
       <div class="page-header__logo">
         <img src="http://placehold.it" width="" height="" alt="Mishka">
       </div>
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <button class="main-nav__closed" type="button">Закрыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
-            <li class="main-nav__item  main-nav__item--active">
-              <a>
-                <img src="http://placehold.it" width="" height="" alt="Mishka">
-              </a>
-            </li>
-          </ul>
-        </div>
+      <nav class="main-nav">
+        <button class="main-nav__button-closed" type="button">Закрыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav--search"><a href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item main-nav--basket"><a href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item">
+            <a>
+              <img src="http://placehold.it" width="" height="" alt="Mishka">
+            </a>
+          </li>
+        </ul>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
       </nav>
-    </header>
-    <header class="intro-header">
-      <div class="intro-header__wrapper">
+      <div class="intro-header">
         <h1>Милые штуки ручной работы для дома</h1>
         <ul class="intro-header__list">
           <li class="intro-header__item"><a href="#">Предметы интерьера</a></li>
@@ -37,46 +33,42 @@
         </ul>
       </div>
     </header>
-    <main class="content">
-      <section class="feature">
-        <div class="feature__wrapper">
-          <h2 class="feature__title">Вязаные корзинки</h2>
-          <span class="feature__status">Товар недели</span>
-          <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="feature__selects">
-            <tr>
-              <td>Цвет:</td>
-              <td>"Тиффани"/серый</td>
-            </tr>
-            <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr>
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </table>
-          <img class="feature__photo" src="http://placehold.it" width="" height="" alt="Вязаные корзинки">
-          <span class="feature__price">Цена: 990 руб.</span>
-          <a class="feature__oder btn" href="#">Заказать</a>
-        </div>
+    <main class="page-content">
+      <section class="popular-product container">          
+        <h2 class="popular-product__title">Вязаные корзинки</h2>
+        <span class="popular-product__status">Товар недели</span>
+        <p class="popular-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="popular-product__info">
+          <tr class="parameters">
+            <td class="name">Цвет:</td>
+            <td class="value">"Тиффани"/серый</td>
+          </tr>
+          <tr>
+            <td class="name">Диаметр:</td>
+            <td class="value">25 см</td>
+          </tr>
+          <tr>
+            <td class="name">Высота:</td>
+            <td class="value">15 см</td>
+          </tr>
+        </table>
+        <img class="popular-product__image" src="http://placehold.it" width="" height="" alt="Вязаные корзинки">
+        <span class="popular-product__price">Цена: 990 руб.</span>
+        <a class="popular-product__oder-btn btn" href="#">Заказать</a>
       </section>
-      <section class="about-us">
-        <div class="about-us__wrapper">
-          <h2 class="about-us__title">Коротко о нас:</h2>
-          <ul class="about-us__list">
-            <li class="about-us__item">Экологически чистые материалы</li>
-            <li class="about-us__item">Скандинавский стиль по российской цене</li>
-            <li class="about-us__item">Увеличивает лайки на фотографиях</li>
-            <li class="about-us__item">Связано вручную с любовью и умилением</li>
-            <li class="about-us__item"> Поддержка отечественно производителя</li>
-            <li class="about-us__item">Поставляется в подарочной упаковке</li>
-          </ul>
-        </div>
+      <section class="about-us container">
+        <h2 class="about-us__title">Коротко о нас:</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item">Экологически чистые материалы</li>
+          <li class="about-us__item">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item"> Поддержка отечественно производителя</li>
+          <li class="about-us__item">Поставляется в подарочной упаковке</li>
+        </ul>
       </section>
-      <section class="reviews">
-        <div class="reviews__wrapper slider">
+      <section class="reviews container">
+        <div class="slider">
           <h2 class="reviews__title">Отзывы</h2>
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
           <div class="reviews__list">
@@ -93,36 +85,36 @@
         <div class="reviews__toggles slider__toggles">
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts container">
         <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__">
-            <tr>
-              <td>e-mail:</td>
-              <td><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-            </tr>
-            <tr>
-              <td>адрес:</td>
-              <td>г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
-            </tr>
-          </table>
-          <map><img src="http://placehold.it" width="" height="" alt="карта"></map>
-          <a class="contacts__tetx-us btn" href="#">Напишите нам</a>
+        <table class="contacts__info">
+          <tr class="parameters">
+            <td class="name">e-mail:</td>
+            <td class="value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+          </tr>
+          <tr>
+            <td class="name">адрес:</td>
+            <td class="value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
+          </tr>
+        </table>
       </section>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <p class="page-footer__social">
-          <span class="social-links">
-            <a class="social-link social-link--insta" href="#">Мы в Инстаграме</a>
-            <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
-            <a class="social-link social-link--tw" href="#">Мы в Твиттере</a>
-          </span>
-        </p>
-        <p class="page-footer__copyright">
-          Разработано
-          <a class="btn page-footer__copyright" href="https://htmlacademy.ru/"><img src="http://placehold.it"></a>
-        </p>
-      </div>
+      <map><img src="http://placehold.it" width="" height="" alt="карта"></map>
+      <div class="container">
+        <a class="contacts__tetx-us btn" href="#">Напишите нам</a>
+      </div>         
+    </main>   
+    <footer class="page-footer">  
+      <p class="page-footer__social">
+        <span class="social-links">
+          <a class="social-link social-link--insta" href="#">Мы в Инстаграме</a>
+          <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
+          <a class="social-link social-link--tw" href="#">Мы в Твиттере</a>
+        </span>
+      </p>
+      <p class="page-footer__copyright">
+        Разработано
+        <a class="btn page-footer__copyright" href="https://htmlacademy.ru/"><img src="http://placehold.it"></a>
+      </p> 
     </footer>
   </body>
 </html>
